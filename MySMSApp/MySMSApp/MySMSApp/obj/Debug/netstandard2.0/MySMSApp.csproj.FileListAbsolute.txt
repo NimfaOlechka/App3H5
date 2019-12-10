@@ -1,0 +1,13 @@
+C:\Users\omko.skp\source\repos\MySMSApp\App3H5\MySMSApp\MySMSApp\MySMSApp\bin\Debug\netstandard2.0\MySMSApp.deps.json
+C:\Users\omko.skp\source\repos\MySMSApp\App3H5\MySMSApp\MySMSApp\MySMSApp\bin\Debug\netstandard2.0\MySMSApp.dll
+C:\Users\omko.skp\source\repos\MySMSApp\App3H5\MySMSApp\MySMSApp\MySMSApp\bin\Debug\netstandard2.0\ref\MySMSApp.dll
+C:\Users\omko.skp\source\repos\MySMSApp\App3H5\MySMSApp\MySMSApp\MySMSApp\bin\Debug\netstandard2.0\MySMSApp.pdb
+C:\Users\omko.skp\source\repos\MySMSApp\App3H5\MySMSApp\MySMSApp\MySMSApp\obj\Debug\netstandard2.0\MySMSApp.csprojAssemblyReference.cache
+C:\Users\omko.skp\source\repos\MySMSApp\App3H5\MySMSApp\MySMSApp\MySMSApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\omko.skp\source\repos\MySMSApp\App3H5\MySMSApp\MySMSApp\MySMSApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\omko.skp\source\repos\MySMSApp\App3H5\MySMSApp\MySMSApp\MySMSApp\obj\Debug\netstandard2.0\MySMSApp.AssemblyInfoInputs.cache
+C:\Users\omko.skp\source\repos\MySMSApp\App3H5\MySMSApp\MySMSApp\MySMSApp\obj\Debug\netstandard2.0\MySMSApp.AssemblyInfo.cs
+C:\Users\omko.skp\source\repos\MySMSApp\App3H5\MySMSApp\MySMSApp\MySMSApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\omko.skp\source\repos\MySMSApp\App3H5\MySMSApp\MySMSApp\MySMSApp\obj\Debug\netstandard2.0\MySMSApp.dll
+C:\Users\omko.skp\source\repos\MySMSApp\App3H5\MySMSApp\MySMSApp\MySMSApp\obj\Debug\netstandard2.0\ref\MySMSApp.dll
+C:\Users\omko.skp\source\repos\MySMSApp\App3H5\MySMSApp\MySMSApp\MySMSApp\obj\Debug\netstandard2.0\MySMSApp.pdb
