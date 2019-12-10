@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Essentials;
 
 namespace MySMSApp
 {
@@ -16,6 +17,31 @@ namespace MySMSApp
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private async void SendSMS_Clicked(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(PhoneEntry.Text))
+            {
+                await SendMessage(MessageEntry.Text, PhoneEntry.Text);
+            }
+        }
+
+        public async Task SendMessage(string message, string recipient)
+        {
+            try
+            {
+                var sms = new SmsMessage(message, recipient);
+                await Sms.ComposeAsync(sms);
+            }
+            catch (FeatureNotSupportedException ex)
+            {
+                await DisplayAlert("Failed", "Sms sending is not supported on this device", "OK");
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Niksen, virker ikke!", ex.Message, "OK");
+            }
         }
     }
 }
