@@ -43,5 +43,17 @@ namespace MySMSApp
                 await DisplayAlert("Niksen, virker ikke!", ex.Message, "OK");
             }
         }
+
+      
+        private void BackgroundMode_Toggled(object sender, ToggledEventArgs e)
+        {
+            if (BackgroundMode.IsToggled)
+            {
+                myCollectionView.BackgroundColor = Color.DarkBlue;
+            } else
+            {
+                myCollectionView.BackgroundColor = Color.Beige;
+            }
+        }
     }
 }

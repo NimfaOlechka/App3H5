@@ -10,30 +10,38 @@
         <local:MainPageController/>
     </ContentPage.BindingContext>
 
-        <Grid>
+    <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height=".1*"/>
+            <RowDefinition Height=".1*"/>
+            <RowDefinition Height=".1*"/>
             <RowDefinition Height=".2*"/>
-            <RowDefinition Height=".2*"/>
-            <RowDefinition Height=".5*"/>
-            <RowDefinition Height="*"/>            
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
                Text="MySMS APP" BackgroundColor="Aqua"
-               FontSize="Title"/>
-        <Editor Grid.Column="0" Grid.Row="1" 
+               FontSize="Title" HorizontalTextAlignment="Center"/>
+        <Switch Grid.Row="1" Grid.Column="1" IsToggled="False"
+                Toggled="BackgroundMode_Toggled"
+                x:Name="BackgroundMode"/>
+
+        <Editor Grid.Row="2" Grid.Column="0"
                 Grid.ColumnSpan="2"  Placeholder="+45 12345656"
                 x:Name="PhoneEntry"/>
-        <Editor Grid.Column="0" Grid.Row="2"  
+        <Editor Grid.Row="3" Grid.Column="0"
                 Placeholder="Enter ur message: "
                 x:Name="MessageEntry"/>
-        <Button Grid.Column="1" Grid.Row="2" Text="Send" Margin="10,20"
+        <Button Grid.Column="1" Grid.Row="3" Text="Send" Margin="10,20"
                 x:Name="SendSMS" Clicked="SendSMS_Clicked"/>
-        <CollectionView Grid.ColumnSpan="2" Grid.Row="3" BackgroundColor="BlueViolet">
+        <CollectionView
+            Grid.ColumnSpan="2" Grid.Row="4" BackgroundColor="Beige"
+            x:Name="myCollectionView"
+            >
             
         </CollectionView>
     </Grid>
