@@ -4,10 +4,10 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             xmlns:local="clr-namespace:MySMSApp.Controller"
+             xmlns:local="clr-namespace:MySMSApp.ViewModels"
              x:Class="MySMSApp.MainPage">
     <ContentPage.BindingContext>
-        <local:MainPageController/>
+        <local:MainPageViewModel/>
     </ContentPage.BindingContext>
 
     <Grid>
@@ -26,9 +26,8 @@
         <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
                Text="MySMS APP" BackgroundColor="Aqua"
                FontSize="Title" HorizontalTextAlignment="Center"/>
-        <Switch Grid.Row="1" Grid.Column="1" IsToggled="False"
-                Toggled="BackgroundMode_Toggled"
-                x:Name="BackgroundMode"/>
+        <Switch Grid.Row="1" Grid.Column="1" IsToggled="{Binding SwitchToggle}"                
+                x:Name="BackgroundMode" />
 
         <Editor Grid.Row="2" Grid.Column="0"
                 Grid.ColumnSpan="2"  Placeholder="+45 12345656"
@@ -37,7 +36,7 @@
                 Placeholder="Enter ur message: "
                 x:Name="MessageEntry"/>
         <Button Grid.Column="1" Grid.Row="3" Text="Send" Margin="10,20"
-                x:Name="SendSMS" Clicked="SendSMS_Clicked"/>
+                x:Name="SendSMS" />
         <CollectionView
             Grid.ColumnSpan="2" Grid.Row="4" BackgroundColor="Beige"
             x:Name="myCollectionView"

@@ -470,4 +470,3 @@ C:\Users\omko.skp\source\repos\MySMSApp\App3H5\MySMSApp\MySMSApp\MySMSApp.Androi
 C:\Users\omko.skp\source\repos\MySMSApp\App3H5\MySMSApp\MySMSApp\MySMSApp.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\omko.skp\source\repos\MySMSApp\App3H5\MySMSApp\MySMSApp\MySMSApp.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\omko.skp\source\repos\MySMSApp\App3H5\MySMSApp\MySMSApp\MySMSApp.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
-C:\Users\omko.skp\source\repos\MySMSApp\App3H5\MySMSApp\MySMSApp\MySMSApp.Android\obj\Debug\90\stamp\SetupDependenciesForDesigner.stamp

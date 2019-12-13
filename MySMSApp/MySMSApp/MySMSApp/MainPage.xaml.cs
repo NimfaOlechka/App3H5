@@ -19,15 +19,15 @@ namespace MySMSApp
             InitializeComponent();
         }
 
-        private async void SendSMS_Clicked(object sender, EventArgs e)
+        /*private async void SendSMS_Clicked(object sender, EventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(PhoneEntry.Text))
             {
                 await SendMessage(MessageEntry.Text, PhoneEntry.Text);
             }
-        }
+        }*/
 
-        public async Task SendMessage(string message, string recipient)
+       /* public async Task SendMessage(string message, string recipient)
         {
             try
             {
@@ -42,18 +42,20 @@ namespace MySMSApp
             {
                 await DisplayAlert("Niksen, virker ikke!", ex.Message, "OK");
             }
-        }
+        }*/
 
       
-        private void BackgroundMode_Toggled(object sender, ToggledEventArgs e)
-        {
-            if (BackgroundMode.IsToggled)
-            {
-                myCollectionView.BackgroundColor = Color.DarkBlue;
-            } else
-            {
-                myCollectionView.BackgroundColor = Color.Beige;
-            }
-        }
+        //private void BackgroundMode_Toggled(object sender, ToggledEventArgs e)
+        //{
+        //    if (BackgroundMode.IsToggled)
+        //    {
+        //        myCollectionView.BackgroundColor = Color.DarkBlue;
+
+        //    } else
+        //    {
+        //        myCollectionView.BackgroundColor = Color.Beige;
+        //    }
+          
+        //}
     }
 }
