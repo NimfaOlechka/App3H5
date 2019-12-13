@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AndroidHelloApp.Views.ContactsPage"
+             Title="{Binding Title}"
+             x:Name="ContactsListPage">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary/>
+    </ContentPage.Resources>
+    
+    <ContentPage.ToolbarItems>        
+        <ToolbarItem Text="Add" Clicked="AddContact_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout Style="{StaticResource Key=DarkBackground}">
+        
+        <ListView x:Name="ContactsListView" 
+                ItemsSource="{Binding Contacts}"
+                VerticalOptions="FillAndExpand"
+                HasUnevenRows="true"
+                RefreshCommand="{Binding LoadContactsCommand}"
+                IsPullToRefreshEnabled="true"
+                IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                CachingStrategy="RecycleElement"
+                  ItemSelected="OnContactSelected"
+                >
+            <d:ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>First Contact</x:String>
+                    <x:String>Second Contact</x:String>
+                    <x:String>Third Contact</x:String>
+                    <x:String>Fourth Contact</x:String>
+                    <x:String>Fifth Contact</x:String>
+                    <x:String>Sixth Contact</x:String>
+                    <x:String>Seventh Contact</x:String>
+                </x:Array>
+            </d:ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="10">
+                            <Label Text="{Binding PhoneNumber}"
+                                d:Text="{Binding .}"
+                                LineBreakMode="NoWrap"
+
+                                FontSize="16" />
+                            <Label Text="{Binding ContactName}"
+                                d:Text="Item descripton"
+                                LineBreakMode="NoWrap"
+
+                                FontSize="13" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+
+</ContentPage>
